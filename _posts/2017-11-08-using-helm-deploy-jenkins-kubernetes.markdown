@@ -18,7 +18,7 @@ To install kube-log, update the following command with your valid email and exec
 
 Results:
 
-```
+``` yaml
 NAME:   quiet-eagle
 LAST DEPLOYED: Mon Oct 16 16:10:51 2017
 NAMESPACE: default
@@ -69,7 +69,7 @@ Wait for the component to be installed and follow the instructions printed by He
 
 Results:
 
-```
+``` yaml
 NAME:   giddy-bobcat
 LAST DEPLOYED: Mon Oct 16 16:11:23 2017
 NAMESPACE: default
@@ -147,7 +147,7 @@ To install Jenkins you can also use an helm chart. But you need to provide some 
 
 Create a file `jenkins-values.yaml` and be careful to replace `jenkins.k8s.your-domain.com` with the domain you configured for the ingress component: 
 
-```
+``` yaml
 Master:
   Memory: "512Mi"
   HostName: jenkins.k8s.your-domain.com
@@ -190,7 +190,7 @@ Then, run the following command to install Jenkins:
 
 Results:
 
-```
+``` yaml
 NAME:   jenkins
 LAST DEPLOYED: Mon Oct 16 17:19:38 2017
 NAMESPACE: jenkins
@@ -242,7 +242,7 @@ Confirm the pod has started:
 
 Results:
 
-```
+``` sh
 Every 2.0s: kubectl get pods --namespace jenkins Mon Oct 16 17:06:30 2017
 
 NAME                               READY     STATUS    RESTARTS   AGE
