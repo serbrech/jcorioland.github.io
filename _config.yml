@@ -2,6 +2,7 @@ title: Julien Corioland
 description: 'Technical blog about Cloud, Containers and DevOps'
 url: "https://blog.jcorioland.io"
 show_downloads: false
+permalink: /archives/:year/:month/:day/:title.html
 
 # Build settings
 markdown: kramdown
