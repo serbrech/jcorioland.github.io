@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Deliver application continuously in Kubernetes on Azure using Jenkins and Helm"
+title:  "Deliver applications continuously on Kubernetes on Azure using Jenkins and Helm"
 date:   2017-11-21 10:00:00 +0100
 categories: Kubernetes, Azure, Jenkins, DevOps
+author: 'Julien Corioland'
 ---
 
 Continuous deployment is essential in every software development project as it allows the application being developed to reach the users as fast as possible, with the best quality as possible.
