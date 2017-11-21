@@ -6,23 +6,23 @@ categories: Kubernetes, Azure, Jenkins, DevOps
 author: 'Julien Corioland'
 ---
 
-Continuous deployment is essential in every software development project as it allows the application being developed to reach the users as fast as possible, with the best quality as possible.
-By automating all the steps that allow your application to be automatically built, packaged, tested and deployed into several environments, you will drastically reduce the risk of having bugs reaching the end user.
+Continuous deployment is essential in every software development project as it allows the applications being developed to reach the users as fast as possible, with the best quality as possible.
+By automating all the steps that allow your applications to be automatically built, packaged, tested and deployed into several environments, you will drastically reduce the risk of having bugs reaching the end users.
 In this article, I will explain how you can use tools like Jenkins and Helm to set up a continuous delivery pipeline of a containerized application that runs on Kubernetes.
 
 ## Prerequesites
 
-Before getting started, you need to have a Kubernetes cluster up and running. If you don't, you can follow [this tutorial](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough) to deploy a managed Kubernetes cluster using Azure Container Service (AKS).
+Before getting started, you need to have a Kubernetes cluster up and running. If you do not have one, you can follow [this tutorial](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough) to deploy a managed Kubernetes cluster using Azure Container Service (AKS).
 
 [Helm](https://github.com/kubernetes/helm) is a package manager for Kubernetes that allows to deploy applications in a smooth way. In this blog post, I will describe how you can use Helm to deploy all the services you need to have a Jenkins server up and running in your Kubernetes cluster.
 I assume that you already have a Kubernetes cluster running with Helm installed.
 
-If you want to be able to access your Jenkins server using your domain name instead of its public IP address, you need to configure your Kubernetes cluster to use an ingress controller. There are several options available to do that. In this case, I choose to use Traefik. You can follow [this tutorial](http://hypernephelist.com/2017/10/17/getting-started-with-traefik-and-k8s-using-acs.html) to set it up on your cluster.
+If you want to be able to access your Jenkins server using your domain name instead of a public IP address, you need to configure your Kubernetes cluster to use an ingress controller. There are several options available to do that. In this case, I choose to use Traefik. You can follow [this tutorial](http://hypernephelist.com/2017/10/17/getting-started-with-traefik-and-k8s-using-acs.html) to set it up on your cluster.
 
 ## Running Jenkins on Kubernetes
 
-Installing Jenkins on Kubernetes is super easy using Helm. Using this Helm chart you will get everything you need to deploy and integrate Jenkins with the Kubernetes cluster.
-Jenkins comes with a [plugin for Kubernetes](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin), allowing to spin up containers to run Jenkins agent, at build time, instead of having machine up and running 24/7 or having to wait for virtual machines to be started when a new build is triggered.
+Installing Jenkins on Kubernetes is super easy using [this Helm chart](https://kubeapps.com/charts/stable/jenkins). You will get everything you need to deploy and integrate Jenkins with the Kubernetes cluster.
+Jenkins comes with a [plugin for Kubernetes](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin), allowing to spin up containers to run Jenkins agents, at build time, instead of having machines up and running 24/7 or having to wait for virtual machines to be started when a new build is triggered.
 
 The simplest way to install Jenkins on Kubernetes is to use [this Helm chart](https://kubeapps.com/charts/stable/jenkins). It is possible to inject Jenkins configuration using a Helm values file:
 
