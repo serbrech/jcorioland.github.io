@@ -24,7 +24,7 @@ If you want to be able to access your Jenkins server using your domain name inst
 Installing Jenkins on Kubernetes is super easy using [this Helm chart](https://kubeapps.com/charts/stable/jenkins). You will get everything you need to deploy and integrate Jenkins with the Kubernetes cluster.
 Jenkins comes with a [plugin for Kubernetes](https://wiki.jenkins.io/display/JENKINS/Kubernetes+Plugin), allowing to spin up containers to run Jenkins agents, at build time, instead of having machines up and running 24/7 or having to wait for virtual machines to be started when a new build is triggered.
 
-The simplest way to install Jenkins on Kubernetes is to use [this Helm chart](https://kubeapps.com/charts/stable/jenkins). It is possible to inject Jenkins configuration using a Helm values file:
+It is possible to inject Jenkins configuration using a Helm values file:
 
 ```yaml
 Master:
