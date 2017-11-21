@@ -3,6 +3,16 @@ description: 'Technical blog about Cloud, Containers and DevOps'
 url: "http://blog.jcorioland.io"
 show_downloads: false
 permalink: /archives/:year/:month/:day/:title.html
+twitter:
+  username: jcorioland
+logo: /assets/images/profile.jpg
+image: /assets/images/profile.jpg
+social:
+  name: Julien Corioland
+  links:
+    - https://twitter.com/jcorioland
+    - https://www.linkedin.com/in/juliencorioland
+    - https://github.com/jcorioland
 
 # Build settings
 markdown: kramdown
