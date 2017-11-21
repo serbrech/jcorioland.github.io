@@ -135,7 +135,7 @@ Look at the `NOTES` to get the command line that will allow to retrieve the admi
 
 Connect to your new Jenkins instance. You may have some updates to do:
 
-![Jenkins Update](../images/jenkins-k8s/jenkins-update.png)
+![Jenkins Update](/images/jenkins-k8s/jenkins-update.png)
 
 ## Kubernetes RBAC
 
@@ -191,7 +191,7 @@ kubectl create -n jenkins -f clusterrolebinding.yaml
 
 To make sure everything is OK with the Kubernetes configuration, go into the Jenkins system configuration. Find the Cloud section, ensure the Kubernetes URL is set to `https://kubernetes.default.svc.cluster.local` and click `Test Connection`:
 
-![Jenkins Kubernetes Configuration](../images/jenkins-k8s/kubernetes-jenkins-config.png)
+![Jenkins Kubernetes Configuration](/images/jenkins-k8s/kubernetes-jenkins-config.png)
 
 ## Jenkins Pipeline
 
@@ -336,7 +336,7 @@ The Jenkins pipeline defined below allows to push the Docker image into a privat
 
 Once created, you need to create a secret in Jenkins that defines the credentials to authenticate to this registry:
 
-![Jenkins ACR Credentials](../images/jenkins-k8s/acr-creds.png)
+![Jenkins ACR Credentials](/images/jenkins-k8s/acr-creds.png)
 
 Be careful of the ID you give to this credential. Here I have used `acr_creds` because it is the name that is also referenced within the Jenkinsfile to get access to this information during the build.
 
@@ -352,20 +352,20 @@ kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name": "NAME_OF
 
 Now, you can open Jenkins Blue Ocean and create a new Jenkins Pipeline:
 
-![Jenkins Pipeline](../images/jenkins-k8s/new-jenkins-pipeline.png)
+![Jenkins Pipeline](/images/jenkins-k8s/new-jenkins-pipeline.png)
 
 Follow the steps to connect your GitHub account (or any other supported source control) and select the project where the Jenkinsfile has been defined. It will be automatically discovered by Jenkins.
 Once done, click create pipeline. It will trigger a new build automatically.
 
 After a while, you should see some new pods being created in the namespace where you have installed Jenkins:
 
-![Jenkins Agents Creating](../images/jenkins-k8s/jenkins-agents-creating.png)
+![Jenkins Agents Creating](/images/jenkins-k8s/jenkins-agents-creating.png)
 
 These are the Jenkins agents where the build is running.
 
 You just have to wait until the build is completed:
 
-![Jenkins Build Succeeded](../images/jenkins-k8s/build-succeeded.png)
+![Jenkins Build Succeeded](/images/jenkins-k8s/build-succeeded.png)
 
 If you want a new build to be triggered automatically, go into your repository web hooks settings and configure a new web hook to be sent to `http://<your-jenkins-url/github-webhook/` (don't forget the final /).
 
