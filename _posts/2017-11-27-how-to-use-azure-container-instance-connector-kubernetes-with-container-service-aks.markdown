@@ -6,9 +6,12 @@ categories: Kubernetes, Azure, AKS, ACI
 author: 'Julien Corioland'
 ---
 
+In this blog post I will explain how it is possible to use the ACI-Connector for Kubernetes, that allows to ask Kubernetes to schedule workloads into Azure Container Instance.
+
 [Azure Container Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/) is a new service (currently in preview) that allows to deploy a managed Kubernetes cluster into Azure. Basically, you only have to pay for the nodes (virtual machines) that run in your cluster and you do not have to deal with Kubernetes masters. Actually, you do not even see Kubernetes masters that are totally managed by the AKS service.
 [Azure Container Instance (ACI)](https://docs.microsoft.com/en-us/azure/container-instances/) is a serverless service that allows to spin up both Linux and Windows Containers, without having to deal with complex infrastructure or orchestration system. Machines that run your containers are not visible and you do not pay for them. You only pay for your containers, on a per-minute billing base.
-In this blog post I will explain how it is possible to use the ACI-Connector for Kubernetes, that allows to ask Kubernetes to schedule workloads into Azure Container Instance.
+
+<!--more-->
 
 ## Deploy a Kubernetes cluster using AKS
 
