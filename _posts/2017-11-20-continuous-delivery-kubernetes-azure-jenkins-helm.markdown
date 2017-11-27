@@ -7,8 +7,12 @@ author: 'Julien Corioland'
 ---
 
 Continuous deployment is essential in every software development project as it allows the applications being developed to reach the users as fast as possible, with the best quality as possible.
+
 By automating all the steps that allow your applications to be automatically built, packaged, tested and deployed into several environments, you will drastically reduce the risk of having bugs reaching the end users.
+
 In this article, I will explain how you can use tools like Jenkins and Helm to set up a continuous delivery pipeline of a containerized application that runs on Kubernetes.
+
+<!--more-->
 
 ## Prerequesites
 
