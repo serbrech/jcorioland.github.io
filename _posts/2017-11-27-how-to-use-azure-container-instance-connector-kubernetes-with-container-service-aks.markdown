@@ -4,6 +4,7 @@ title:  "How to use the Azure Container Instance connector for Kubernetes with A
 date:   2017-11-27 10:00:00 +0100
 categories: Kubernetes, Azure, AKS, ACI
 author: 'Julien Corioland'
+identifier: 'uleFu4ykDUSpAe+XDrSKoA=='
 ---
 
 [Azure Container Service (AKS)](https://docs.microsoft.com/en-us/azure/aks/) is a new service (currently in preview) that allows to deploy a managed Kubernetes cluster into Azure. Basically, you only have to pay for the nodes (virtual machines) that run in your cluster and you do not have to deal with Kubernetes masters. Actually, you do not even see Kubernetes masters that are totally managed by the AKS service.

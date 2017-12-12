@@ -4,6 +4,7 @@ title:  "Kubernetes on Azure: deliver applications continuously with Jenkins and
 date:   2017-11-21 10:00:00 +0100
 categories: Kubernetes, Azure, Jenkins, DevOps
 author: 'Julien Corioland'
+identifier: '9DjS9AsUBkCGYuPevMvJeg=='
 ---
 
 Continuous deployment is essential in every software development project as it allows the applications being developed to reach the users as fast as possible, with the best quality as possible.
