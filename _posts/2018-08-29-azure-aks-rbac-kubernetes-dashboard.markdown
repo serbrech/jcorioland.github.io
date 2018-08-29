@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to access Kubernetes dasbhoard on an Azure Kubernetes Service cluster with RBAC enabled"
-date:   2018-08-29 11:00:00 +0200
+date:   2018-08-29 13:08:00 +0200
 categories: Azure, AKS, Kubernetes
 author: 'Julien Corioland'
 identifier: '5cd46126-f5c0-492a-9ec6-f30d3359925e'
@@ -57,7 +57,7 @@ Once this command applied, just hit refresh in your browser and you should have 
 
 OK, this is great. But now, you should know that the Kubernetes dashboard pod can do anything a cluster administrator can do. This can be fine with your strategy. But you may also want to control a little bit more what happens here.
 
-In that case, you can start from the minimal role definition [here](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dashboard/dashboard-rbac.yaml) and add the rules that you want add to the dashboard.
+In that case, you can start from the minimal role definition [here](https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dashboard/dashboard-rbac.yaml) and add the rules that you want to be applied to the dashboard.
 While it's done, just apply the yaml file again:
 
 ```bash
