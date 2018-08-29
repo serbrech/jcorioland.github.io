@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to access Kubernetes dasbhoard on an Azure Kubernetes Service cluster with RBAC enabled"
+title:  "How to access Kubernetes dashboard on an Azure Kubernetes Service cluster with RBAC enabled"
 date:   2018-08-29 13:09:00 +0200
 categories: Azure, AKS, Kubernetes
 author: 'Julien Corioland'
