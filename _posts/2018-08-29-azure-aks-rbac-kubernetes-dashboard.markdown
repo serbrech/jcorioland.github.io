@@ -65,5 +65,3 @@ kubectl apply -f dashboard-rbac.yaml
 ```
 
 Hope this helps!
-
-Julien
