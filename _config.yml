@@ -23,6 +23,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-sitemap
 
 version: 1.0
 paginate: 5

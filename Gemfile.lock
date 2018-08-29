@@ -28,6 +28,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.3.0)
       jekyll (~> 3.3)
+    jekyll-sitemap (1.2.0)
+      jekyll (~> 3.3)
     jekyll-theme-cayman (0.1.0)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -67,8 +69,9 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-gist
   jekyll-paginate
+  jekyll-sitemap
   jekyll-theme-cayman
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.4
