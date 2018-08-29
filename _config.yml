@@ -15,6 +15,7 @@ social:
     - https://github.com/jcorioland
 
 excerpt_separator: <!--more-->
+google_analytics: UA-124844581-1
 
 # Build settings
 markdown: kramdown
