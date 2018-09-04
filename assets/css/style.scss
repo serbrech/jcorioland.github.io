@@ -41,6 +41,7 @@ section.page-header {
 
 a {
     color: rgb(21, 65, 100);
+    text-decoration: underline;
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
@@ -48,7 +49,7 @@ a {
 }
 
 .post-date, .post-category {
-    font-family: Courier New, Courier, monospace;
+    color: rgb(21, 65, 100);
 }
 
 .post-category {
