@@ -1,44 +1,47 @@
 ---
 layout: post
-title:  "Read Azure Keyvault secrets from Kubernetes using Azure AD Pod Identity"
+title:  "Use Azure managed identities with Azure Kubernetes Services"
 date:   2018-09-04 16:00:00 +0200
 categories: Azure, AKS, Kubernetes
 author: 'Julien Corioland'
 identifier: 'cfca81c9-48e8-4636-a6be-8a04da713e12'
 ---
 
-In this blog post, I will explain how you can use the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project (currently in Beta) to retrieve secrets from Azure Keyvault in an application running in a Kubernetes pod, using a managed identites.
+In this blog post, I will explain how you can use the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project (currently in Beta). I will illustrate this with a basic sample that consists in retrieving secrets from an Azure Keyvault in a Go application running in a Kubernetes pod.
 
 <!--more-->
 
 Azure Keyvault is a great option to externalize the way you are storing secrets and credentials required by your application outside of the application. But you still need to have a credentials to access Azure Keyvault. This issue can now be solved by using [Azure Active Directory Managed Identities](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/).
 
-Basically, managed identities allows your application or service to automatically obtain an OAuth 2.0 token from an endpoint running locally, on the virtual machine or service (if it supports Managed Service Identities) where your application is executed.
-When you are using Azure Kubernetes Service (or ACS-Engine) you can of course enabled Managed Service Identity on all the nodes that are running inside the cluster and then retrieve OAuth 2.0 tokens, like with any workload running on a virtual machine in Azure. But this has a huge drawback: that means that you are forced to use the same identities for ALL the pods running on the same node, even if they are running in different namespaces, for different teams or different customers (if you are running a multi-tenant application).
+Basically, managed identities allow your application or service to automatically obtain an OAuth 2.0 token from an endpoint running locally, on the virtual machine or service (if it supports Managed Service Identities) where your application is executed.
 
-This is where the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) comes up as it provides (in short, read [the full design docs](https://github.com/Azure/aad-pod-identity/blob/master/docs/design/concept.md) for more details):
+When using Azure Kubernetes Service you can enable Managed Service Identity on all the nodes that are running in the cluster and then retrieve OAuth 2.0 tokens, like with any workloads running on a virtual machine in Azure. But by doing that you should know that it means that ALL the pods running on the same node will use the same manage identity, even if they are running in different namespaces, for different teams or different customers (if you are running a multi-tenant application). That makes really difficult to assign roles with fine-grade control in Azure RBAC.
+
+This is where the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project comes up as it provides:
 
 - CRDs for AzureIdentity and AzureIdentityBinding which are resources definitions for Azure managed identity and the binding to this identity within the Kubernetes cluster
 - A custom managed service identity server, running inside the cluster that will allow your app to get an Active Directory token from a managed identity
 
-> For the following, I assume that you already have an Azure Kubernetes Service cluster running. If not, you can deploy one following [this documentation](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough). Please pay attention to the service principal you are using to create the cluster, as you will need its identifier to configure Azure AD Pod Identity. If you are not familiar with AKS and Service principals, [read this](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal).
+> Note: read [the full design docs](https://github.com/Azure/aad-pod-identity/blob/master/docs/design/concept.md) for more details.
+
+In the following, I will assume that you already have an Azure Kubernetes Service cluster running. If not, you can deploy one following [this documentation](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough). Please pay attention to the service principal you are using to create the cluster, as you will need its identifier to configure Azure AD Pod Identity. If you are not familiar with AKS and Service principals, [read this page first](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal).
 
 ### Create an Azure Keyvault instance
 
-First, you need an Azure Keyvault instance. You can create one using Azure CLI 2.0:
+You can create an Azure Keyvault instance using the following command:
 
 ```bash
 az group create -n keyvault-aad-pod-identity-rg -l westeurope
 az keyvault create -n keyvaultk8s -g keyvault-aad-pod-identity-rg -l westeurope
 ```
 
-Once the Azure Keyvault instance is ready, you can create a secret using the following command:
+Once the Azure Keyvault instance is ready, you can create a secret:
 
 ```bash
 az keyvault secret set -n mySecret --vault-name keyvaultk8s --value MySuperSecretThatIDontWantToShareWithYou!
 ```
 
-In the following, the objective will me to retrieve the value of the secret `mySecret` from inside a pod running in the Kubernetes cluster. But first, let's setup your AKS cluster!
+Now, the goal is to retrieve the value of the secret `mySecret` from inside a pod running in the Kubernetes cluster, without passing any credentials to the application! But first thing first, let's setup your AKS cluster!
 
 ### Configure your Kubernetes cluster to run Azure AD Pod Identity infrastructure
 
@@ -76,7 +79,9 @@ az role assignment create --role "Reader" --assignee <principalId> --scope /subs
 
 > Note: you will find the `princpalId` field the output of the identity creation command.
 
-[aad-pod-identity uses the service principal of your Kubernetes cluster](https://github.com/Azure/aad-pod-identity#providing-required-permissions-for-mic) to access the Azure resources. You need to give this service principal the rights to use the managed identity created before:
+[aad-pod-identity uses the service principal of your Kubernetes cluster](https://github.com/Azure/aad-pod-identity#providing-required-permissions-for-mic) to access the Azure managed identity resource and work with it.
+
+This is why you need to give this service principal the rights to use the managed identity created before:
 
 ```bash
 az role assignment create --role "Managed Identity Operator" --assignee <servicePrincipalId> --scope /subscriptions/{YourSubscriptionID}/resourceGroups/keyvault-aad-pod-identity-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/keyvaultsampleidentity
@@ -86,7 +91,7 @@ az role assignment create --role "Managed Identity Operator" --assignee <service
 
 ### Create Kubernetes AzureIdentity and AzureIdentityBinding
 
-To be able to bind the managed identity you've created above to the pod that will run the sample application, you need to define two Kubernetes resources: an AzureIdentity and an AzureIdentityBinding.
+To be able to bind the managed identity you've created to the pod that will run the sample application, you need to define two new Kubernetes resources: an AzureIdentity and an AzureIdentityBinding.
 
 azureidentity.yaml:
 
@@ -132,7 +137,9 @@ if err == nil {
 }
 ```
 
-> Note: By default, the `NewAuthorizerFromEnvironment` retrieve the authorization token automatically from the local managed identity endpoint (the aad-pod-identity server).
+> Note: By default, the `NewAuthorizerFromEnvironment` retrieve the authorization token automatically from the local managed identity endpoint (the aad-pod-identity server). You can read more details about how the Azure Authorization Go SDK works [here](https://docs.microsoft.com/en-us/go/azure/azure-sdk-go-authorization).
+
+The YAML definition below defines a deployment to run the sample application using a pre-built Docker image. You can build your own from the sample GitHub repository if you prefer.
 
 keyvaultsample.yaml:
 
@@ -159,7 +166,7 @@ spec:
     spec:
       containers:
       - name: keyvaultsample
-        image: jcorioland/keyvault-aad-pod-identity
+        image: jcorioland/keyvault-aad-pod-identity:1.0
         environment:
         - name: AZURE_KEYVAULT_NAME
           value: keyvaultk8s
