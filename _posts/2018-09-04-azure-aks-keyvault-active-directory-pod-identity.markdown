@@ -7,7 +7,7 @@ author: 'Julien Corioland'
 identifier: 'cfca81c9-48e8-4636-a6be-8a04da713e12'
 ---
 
-In this blog post, I will explain how you can use the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project (currently in Beta). I will illustrate this with a basic sample that consists in retrieving secrets from an Azure Keyvault in a Go application running in a Kubernetes pod.
+In this blog post, I will explain how you can use the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project (currently in Beta) to get an Azure managed indentity bound to a pod running in your Kubernetes cluster. I will illustrate this with a basic sample that consists in retrieving secrets from an Azure Keyvault in a Go application running in a Kubernetes pod.
 
 <!--more-->
 
