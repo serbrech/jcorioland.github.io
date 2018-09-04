@@ -166,8 +166,8 @@ spec:
     spec:
       containers:
       - name: keyvaultsample
-        image: jcorioland/keyvault-aad-pod-identity:1.0
-        environment:
+        image: jcorioland/keyvault-aad-pod-identity:1.1
+        env:
         - name: AZURE_KEYVAULT_NAME
           value: keyvaultk8s
         - name: AZURE_KEYVAULT_SECRET_NAME
@@ -177,7 +177,6 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-type: LoadBalancer
 metadata:
   name: keyvaultsample
   namespace: default
@@ -187,6 +186,7 @@ spec:
     targetPort: 8080
   selector:
     app: keyvaultsample
+  type: LoadBalancer
 ```
 
 As you can see in the YAML file above, the `Selector` that has been defined earlier in the AzureIdentityBinding is used with the `aadpodidbinding` label. This is where the binding between the Azure identity and the pod is done.
