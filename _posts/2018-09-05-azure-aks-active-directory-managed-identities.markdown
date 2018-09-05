@@ -17,7 +17,7 @@ Azure Keyvault is a great option to externalize the way you are storing secrets 
 
 Basically, Azure managed identities allow your application or service to automatically obtain an OAuth 2.0 token to authenticate to Azure resources, from an endpoint running locally on the virtual machine or service (if it supports Managed Service Identities) where your application is executed. Their are two different types of managed identities in Azure: **system-assigned** identities, that you can enable directly on the Azure services that support it (a virtual machine or Azure App Service, for example) and **user-assigned managed identities** that are Azure resources created separately.
 
-When using Azure Kubernetes Service you can enable Managed Service Identity on all the nodes that are running in the cluster and then retrieve OAuth 2.0 tokens, like with any workloads running on a virtual machine in Azure. But by doing that you should know that it means that ALL the pods running on the same node will use the same manage identity, even if they are running in different namespaces, for different teams or different customers (if you are running a multi-tenant application). That makes really difficult to assign roles with fine-grade control in Azure RBAC.
+When using Azure Kubernetes Service you can enable Managed Service Identity on all the nodes that are running in the cluster and then retrieve OAuth 2.0 tokens, like with any workloads running on a virtual machine in Azure. But by doing that you should know that it means that ALL the pods running on the same node will use the same managed identity, even if they are running in different namespaces, for different teams or different customers (if you are running a multi-tenants application). That makes really difficult to assign roles with fine-grade control in Azure RBAC.
 
 This is where the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project comes up as it provides:
 
@@ -213,10 +213,10 @@ Deploy the sample application:
 kubectl create -f keyvaultsample.yaml
 ```
 
-Once the pod has started and a public IP address has been assigned by your service, you can just browse `http://{PUBLIC_IP}/keyvault` and you should see the value of the secret stored in your Azure Keyvault:
+Once the pod has started and a public IP address has been assigned to your service, you can just browse `http://{PUBLIC_IP}/keyvault` and you should see the value of the secret stored in your Azure Keyvault:
 
 ![keyvault-result.png](/images/azure-aks-active-directory-managed-identities/keyvault-result.png)
 
-Using Azure Managed identities and [aad-pod-identity](https://github.com/Azure/aad-pod-identity) you've been able to give access rights to a given pod to Azure Keyvault, without having to pass credentials in a config file or any environment variable, and this is really awesome!
+Using Azure Managed identities and [aad-pod-identity](https://github.com/Azure/aad-pod-identity) you've been able to give access rights to a given pod to Azure Keyvault resource, without having to pass credentials in a config file or any environment variable, and this is really awesome!
 
 Hope this helps!
