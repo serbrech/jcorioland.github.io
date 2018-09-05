@@ -13,7 +13,7 @@ In this blog post, I will explain how you can use the [aad-pod-identity](https:/
 
 Azure Keyvault is a great option to externalize the way you are storing secrets and credentials required by your application outside of the application. But you still need to have a credentials to access Azure Keyvault. This issue can now be solved by using [Azure Active Directory Managed Identities](https://docs.microsoft.com/en-us/azure/active-directory/managed-service-identity/overview).
 
-> *Disclamer: I've choose to illustrate with Azure Keyvault because this sample is really simple and help to understand how managed identites can help in similar scenarios. If you are looking specifically for a solution to get your Azure Keyvault secrets inside Kubernetes automatically, you may want to have a look to the [Kubernetes-Keyvault-FlexVolume](https://github.com/Azure/kubernetes-keyvault-flexvol) project instead (btw, this project uses itself aad-pod-identity, for the record).*
+> *Disclamer: I've chosen to illustrate with Azure Keyvault because this sample is really simple and help to understand how managed identites can help in similar scenarios. If you are looking specifically for a solution to get your Azure Keyvault secrets inside Kubernetes automatically, you may want to have a look to the [Kubernetes-Keyvault-FlexVolume](https://github.com/Azure/kubernetes-keyvault-flexvol) project instead (btw, this project uses itself aad-pod-identity, for the record).*
 
 Azure managed identities allow your application or service to automatically obtain an OAuth 2.0 token to authenticate to Azure resources, from an endpoint running locally on the virtual machine or service (if it supports Managed Service Identities) where your application is executed. Their are two different types of managed identities in Azure: **system-assigned** identities, that you can enable directly on the Azure services that support it (a virtual machine or Azure App Service, for example) and **user-assigned managed identities** that are Azure resources created separately.
 
@@ -22,9 +22,9 @@ When using Azure Kubernetes Service you can enable Managed Service Identity on a
 This is where the [aad-pod-identity](https://github.com/Azure/aad-pod-identity) project comes up as it provides:
 
 - CRDs for AzureIdentity and AzureIdentityBinding which are resources definitions for Azure managed identity and the binding to this identity within the Kubernetes cluster
-- Two infrastructure components, Managed Identity Controller (MIC) and Node Managed Identity (NMI) that will handle the managed identities flow for your applications 
+- Two infrastructure components, Managed Identity Controller (MIC) and Node Managed Identity (NMI) that will handle the managed identities flow for your applications
 
-> Note: read [the full design docs](https://github.com/Azure/aad-pod-identity/blob/master/docs/design/concept.md) for more details.
+> Note: read [the full design docs](https://github.com/Azure/aad-pod-identity/blob/master/docs/design/concept.md) and the [flow diagram](https://github.com/Azure/aad-pod-identity/blob/master/docs/design/concept.png) for more details.
 
 In the following, I will assume that you already have an Azure Kubernetes Service cluster running. If not, you can deploy one following [this documentation](https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough). Please pay attention to the service principal you are using to create the cluster, as you will need its identifier to configure Azure AD Pod Identity. If you are not familiar with AKS and Service principals, [read this page first](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal).
 
