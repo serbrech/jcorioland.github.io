@@ -15,7 +15,7 @@ Azure Keyvault is a great option to externalize the way you are storing secrets 
 
 > *Disclamer: I've choose to illustrate with Azure Keyvault because this sample is really simple and help to understand how managed identites can help in similar scenarios. If you are looking specifically for a solution to get your Azure Keyvault secrets inside Kubernetes automatically, you may want to have a look to the [Kubernetes-Keyvault-FlexVolume](https://github.com/Azure/kubernetes-keyvault-flexvol) project instead (btw, this project uses itself aad-pod-identity, for the record).*
 
-Basically, Azure managed identities allow your application or service to automatically obtain an OAuth 2.0 token to authenticate to Azure resources, from an endpoint running locally on the virtual machine or service (if it supports Managed Service Identities) where your application is executed. Their are two different types of managed identities in Azure: **system-assigned** identities, that you can enable directly on the Azure services that support it (a virtual machine or Azure App Service, for example) and **user-assigned managed identities** that are Azure resources created separately.
+Azure managed identities allow your application or service to automatically obtain an OAuth 2.0 token to authenticate to Azure resources, from an endpoint running locally on the virtual machine or service (if it supports Managed Service Identities) where your application is executed. Their are two different types of managed identities in Azure: **system-assigned** identities, that you can enable directly on the Azure services that support it (a virtual machine or Azure App Service, for example) and **user-assigned managed identities** that are Azure resources created separately.
 
 When using Azure Kubernetes Service you can enable Managed Service Identity on all the nodes that are running in the cluster and then retrieve OAuth 2.0 tokens, like with any workloads running on a virtual machine in Azure. But by doing that you should know that it means that ALL the pods running on the same node will use the same managed identity, even if they are running in different namespaces, for different teams or different customers (if you are running a multi-tenants application). That makes really difficult to assign roles with fine-grade control in Azure RBAC.
 
@@ -63,7 +63,7 @@ kubectl create -f https://raw.githubusercontent.com/Azure/aad-pod-identity/maste
 
 ### Create an Azure managed identity
 
-Now that your Kubernetes cluster is ready to provide Azure Active Directory tokens to your applications, you need to create an Azure Managed Identity and assign role to it. This is basically the identity that you will later bind on your pod running the sample application.
+Now that your Kubernetes cluster is ready to provide Azure Active Directory tokens to your applications, you need to create an Azure Managed Identity and assign role to it. This is the identity that you will later bind on your pod running the sample application.
 
 To create a managed identity, you can use this command:
 
