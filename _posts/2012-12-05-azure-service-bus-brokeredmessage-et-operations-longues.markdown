@@ -2,7 +2,8 @@
 layout: post
 title: "Azure Service Bus, BrokeredMessage et opérations longues"
 date: 2012-12-05 13:51:39 +01:00
-categories: Windows Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 4abc9fb0-e795-4000-a0f6-c5f4f8b199f6
 redirect_from:

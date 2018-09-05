@@ -2,7 +2,8 @@
 layout: post
 title: "[Build 2015] Quoi de neuf pour Microsoft Azure ?"
 date: 2015-05-03 9:46:37 +02:00
-categories: Microsoft Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 3264728d-0dee-4da6-87a3-f16c61fcf178
 redirect_from:

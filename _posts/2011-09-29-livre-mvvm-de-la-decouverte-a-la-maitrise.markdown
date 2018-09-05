@@ -2,7 +2,8 @@
 layout: post
 title: "[Livre] MVVM : De la découverte à la maîtrise"
 date: 2011-09-29 11:44:00 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: 4d515b27-1024-4e25-bba8-4a81858aac73
 redirect_from:

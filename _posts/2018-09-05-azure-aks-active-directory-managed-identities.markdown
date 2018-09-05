@@ -2,7 +2,9 @@
 layout: post
 title:  "Use Azure managed identities with Azure Kubernetes Services (AKS)"
 date:   2018-09-05 11:15:00 +0200
-categories: Azure, AKS, Kubernetes
+categories: 
+- Microsoft Azure
+- Kubernetes
 author: 'Julien Corioland'
 identifier: 'cfca81c9-48e8-4636-a6be-8a04da713e12'
 ---

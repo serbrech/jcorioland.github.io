@@ -2,7 +2,9 @@
 layout: post
 title: "[ASPNET MVC] Utilisation du plugin jQuery BBQ pour la gestion du bouton back et la navigation par fragment dans une SPA"
 date: 2012-12-21 9:07:05 +01:00
-categories: ASP.NET MVC, Javascript
+categories:
+- ASP.NET MVC
+- Web Development
 author: "Julien Corioland"
 identifier: 14a43d10-551f-4342-8b4b-bcfc6aea0011
 redirect_from:

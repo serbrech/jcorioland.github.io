@@ -2,7 +2,10 @@
 layout: post
 title: "[Build 2012] Partage de code entre Windows Phone 8 et Windows 8"
 date: 2012-10-30 17:37:00 +01:00
-categories: Windows Phone, Windows 8, Build 2012
+categories:
+- Windows Phone
+- Windows 8
+- Build 2012
 author: "Julien Corioland"
 identifier: f9e3290c-07bb-40a1-8996-b2972c398dfe
 redirect_from:

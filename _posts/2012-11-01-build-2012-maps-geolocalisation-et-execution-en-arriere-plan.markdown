@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] Maps, géolocalisation et exécution en arrière plan."
 date: 2012-11-01 16:28:53 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: f5267c0f-83ca-4cb0-9b6d-c056ec9be94c
 redirect_from:

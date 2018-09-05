@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Fournisseur de cache de sortie personnalisé"
 date: 2011-09-13 7:18:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 18772593-2789-40c3-a398-c273d5133983
 redirect_from:

@@ -2,7 +2,8 @@
 layout: post
 title: "[Windows Phone 8] Ecrire un tag NFC et lancement d’une application via NFC"
 date: 2012-11-02 17:27:45 +01:00
-categories: Windows Phone
+categories:
+- Windows Phone
 author: "Julien Corioland"
 identifier: 1ba78eff-2e97-4a0d-aa99-4b66a159dd49
 redirect_from:

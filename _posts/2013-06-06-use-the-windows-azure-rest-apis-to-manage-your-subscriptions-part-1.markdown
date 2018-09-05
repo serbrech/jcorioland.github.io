@@ -2,7 +2,8 @@
 layout: post
 title: "Use the Windows Azure REST APIs to manage your subscriptions - Part 1"
 date: 2013-06-06 7:55:46 +02:00
-categories: Windows Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 5d97b88b-dcec-42af-9890-26e40575a053
 redirect_from:

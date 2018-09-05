@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Authentification et utilisateurs anonymes"
 date: 2011-08-22 15:37:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 75211abb-bcdb-4e04-8d39-1b4d5cc8a91f
 redirect_from:

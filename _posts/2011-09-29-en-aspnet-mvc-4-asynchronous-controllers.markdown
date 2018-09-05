@@ -2,7 +2,8 @@
 layout: post
 title: "[EN] [ASP.NET MVC 4] Asynchronous controllers"
 date: 2011-09-29 11:03:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: c1179f17-28de-4360-9286-6680cf4dc58f
 redirect_from:

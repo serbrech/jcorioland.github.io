@@ -2,7 +2,8 @@
 layout: post
 title: "Build 2012 c’est parti !"
 date: 2012-10-30 5:49:00 +01:00
-categories: Build 2012
+categories:
+- Build 2012
 author: "Julien Corioland"
 identifier: 27d62c98-d70f-400b-836e-99ba8a941c47
 redirect_from:

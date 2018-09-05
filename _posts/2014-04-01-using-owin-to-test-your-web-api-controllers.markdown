@@ -2,7 +2,9 @@
 layout: post
 title: "Using OWIN to test your web api controllers"
 date: 2014-04-01 8:42:00 +02:00
-categories: ASP.NET MVC, ASP.NET Web API, ASP.NET, OWIN
+categories:
+- ASP.NET MVC
+- ASP.NET Web API
 author: "Julien Corioland"
 identifier: ac109bb5-e8ec-4664-87b5-97f439d48716
 redirect_from:

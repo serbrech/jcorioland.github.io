@@ -2,7 +2,8 @@
 layout: post
 title: "[ASPNET] Exécutez du code au pré-démarrage d’une application"
 date: 2013-04-10 6:48:47 +02:00
-categories: ASP.NET MVC, ASP.NET
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 1080de24-8336-4a0c-9edd-720cab9d11c4
 redirect_from:

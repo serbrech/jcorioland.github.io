@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Utilisation des préfixes pour la génération des noms et id des champs"
 date: 2013-02-06 9:58:00 +01:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: fd856000-5b8d-40f1-8a5e-75a1622dc6bb
 redirect_from:

@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Validation de formulaire avec jQuery"
 date: 2011-08-01 7:32:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: bf088c4a-8a0e-416b-b313-64338fc7a204
 redirect_from:

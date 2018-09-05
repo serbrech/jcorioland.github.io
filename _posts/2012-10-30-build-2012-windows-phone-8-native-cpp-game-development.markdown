@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] - Windows Phone 8 Native C/C++ Game Development"
 date: 2012-10-30 15:54:00 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: 9f16824a-92fc-4f47-9b18-4c71a46278a9
 redirect_from:

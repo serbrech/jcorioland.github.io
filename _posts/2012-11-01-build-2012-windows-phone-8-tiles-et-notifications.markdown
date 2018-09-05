@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] Windows Phone 8 – tiles et notifications"
 date: 2012-11-01 22:44:53 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: 69c82e30-6b23-4a0d-a915-7cc9b11af0a0
 redirect_from:

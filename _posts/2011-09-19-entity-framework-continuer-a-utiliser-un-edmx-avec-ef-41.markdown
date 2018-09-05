@@ -2,7 +2,8 @@
 layout: post
 title: "[Entity Framework] Continuer à utiliser un EDMX avec EF 4.1"
 date: 2011-09-19 10:50:00 +02:00
-categories: Entity Framework
+categories:
+- Web Development
 author: "Julien Corioland"
 identifier: 99aeb394-2351-4cb0-b7ee-1f8707dd9335
 redirect_from:

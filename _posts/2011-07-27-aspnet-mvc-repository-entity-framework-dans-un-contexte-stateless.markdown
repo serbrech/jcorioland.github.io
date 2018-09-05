@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Repository Entity Framework dans un contexte stateless"
 date: 2011-07-27 13:44:57 +02:00
-categories: ASP.NET MVC, Entity Framework
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: c4235b76-4324-4894-a769-2970d39d2272
 redirect_from:

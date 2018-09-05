@@ -2,7 +2,8 @@
 layout: post
 title: "Introduction à Windows Azure Media Services"
 date: 2012-12-04 11:07:48 +01:00
-categories: Windows Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 3c118028-ef11-428d-b61e-b7893245030d
 redirect_from:

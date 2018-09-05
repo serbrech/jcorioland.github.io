@@ -2,7 +2,8 @@
 layout: post
 title: "Azure Media Services : enable dynamic PlayReady content protection on your assets"
 date: 2014-11-20 9:06:07 +01:00
-categories: Media Services, Microsoft Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: d12242d1-772b-4953-8631-290d9e882963
 redirect_from:

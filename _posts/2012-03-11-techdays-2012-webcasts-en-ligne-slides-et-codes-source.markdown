@@ -2,7 +2,9 @@
 layout: post
 title: "[Techdays 2012] Webcasts en ligne, slides et codes source !"
 date: 2012-03-11 11:24:00 +01:00
-categories: ASP.NET MVC, Windows Phone
+categories:
+- ASP.NET MVC
+- Windows Phone
 author: "Julien Corioland"
 identifier: 118ce6a4-c2e2-4f35-8c21-0884f353c792
 redirect_from:

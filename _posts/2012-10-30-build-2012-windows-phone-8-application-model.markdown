@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] - Windows Phone 8 Application Model"
 date: 2012-10-30 12:42:00 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: f3a426c6-a16c-4916-89eb-c4681bb69560
 redirect_from:

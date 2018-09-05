@@ -2,7 +2,8 @@
 layout: post
 title: "[EN][Entity Framework] Database first approach with EF 4.1"
 date: 2011-09-22 11:48:00 +02:00
-categories: Entity Framework
+categories:
+- Web Development
 author: "Julien Corioland"
 identifier: 72df1873-197c-4dae-ae51-838994966730
 redirect_from:

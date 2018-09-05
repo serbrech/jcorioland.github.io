@@ -2,7 +2,8 @@
 layout: post
 title: "Execution de librairie 32 bit dans un rôle Windows Azure"
 date: 2013-05-14 9:13:00 +02:00
-categories: Windows Azure
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 1da6b4cf-5097-4b0a-bd97-f37b0df00c0f
 redirect_from:

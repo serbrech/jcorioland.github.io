@@ -2,7 +2,8 @@
 layout: post
 title: "[Visual Studio] Développement de règles d'archivage personnalisées pour TFS"
 date: 2011-08-03 13:30:00 +02:00
-categories: Visual Studio, TFS 2010
+categories:
+- DevOps
 author: "Julien Corioland"
 identifier: 2100a636-e34b-4c1f-8688-5d350dff6881
 redirect_from:

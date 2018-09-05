@@ -2,7 +2,8 @@
 layout: post
 title: "[Windows Phone] Bonnes pratiques dans une tâche périodique avec un background agent"
 date: 2011-10-25 10:14:00 +02:00
-categories: Windows Phone
+categories:
+- Windows Phone
 author: "Julien Corioland"
 identifier: 965f2204-947d-428d-89a8-482f91d2ed6d
 redirect_from:

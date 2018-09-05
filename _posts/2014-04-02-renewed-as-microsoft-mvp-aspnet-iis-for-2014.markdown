@@ -2,7 +2,8 @@
 layout: post
 title: "Renewed as Microsoft MVP ASPNET IIS for 2014"
 date: 2014-04-02 13:29:57 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: 32195b7d-f2b2-4428-92f5-dcfc11bdb7db
 redirect_from:

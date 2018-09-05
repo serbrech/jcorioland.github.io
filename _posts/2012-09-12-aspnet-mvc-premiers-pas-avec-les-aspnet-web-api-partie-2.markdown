@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Premiers pas avec les ASP.NET Web API - Partie 2"
 date: 2012-09-12 18:56:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: eecbc6bd-1251-4595-9d0a-d4007f7ef988
 redirect_from:

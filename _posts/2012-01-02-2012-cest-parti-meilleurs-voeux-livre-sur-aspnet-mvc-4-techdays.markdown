@@ -2,7 +2,8 @@
 layout: post
 title: "2012 c'est parti : Meilleurs voeux, livre sur ASP.NET MVC 4, Techdays..."
 date: 2012-01-02 8:57:00 +01:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: 01d6fbcf-4954-48bb-a366-8adb952b68b8
 redirect_from:

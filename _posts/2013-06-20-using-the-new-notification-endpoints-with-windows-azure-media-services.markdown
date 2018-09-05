@@ -2,7 +2,8 @@
 layout: post
 title: "Using the new notification endpoints with Windows Azure Media Services"
 date: 2013-06-20 16:42:06 +02:00
-categories: Windows Azure, Media Services
+categories:
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 1ef99d02-1733-4b7a-8c05-ab61f80c0a5b
 redirect_from:

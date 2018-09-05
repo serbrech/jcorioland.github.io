@@ -2,7 +2,8 @@
 layout: post
 title: "[En] Enable or disable IE proxy using Powershell"
 date: 2011-09-06 7:46:00 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: eec03230-094d-49f9-aaf2-a77fb92ca48f
 redirect_from:

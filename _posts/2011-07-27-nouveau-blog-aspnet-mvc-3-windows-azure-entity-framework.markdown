@@ -2,7 +2,8 @@
 layout: post
 title: "Nouveau blog : aspnet mvc 3, windows azure, entity framework…"
 date: 2011-07-27 12:25:37 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: dc3af90f-387a-40f9-ae7f-98f97caab6d0
 redirect_from:

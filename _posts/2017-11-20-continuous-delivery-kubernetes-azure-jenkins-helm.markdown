@@ -2,7 +2,10 @@
 layout: post
 title:  "Kubernetes on Azure: deliver applications continuously with Jenkins and Helm"
 date:   2017-11-21 10:00:00 +0100
-categories: Kubernetes, Azure, Jenkins, DevOps
+categories:
+- Microsoft Azure
+- Kubernetes
+- DevOps
 author: 'Julien Corioland'
 identifier: '9DjS9AsUBkCGYuPevMvJeg=='
 ---

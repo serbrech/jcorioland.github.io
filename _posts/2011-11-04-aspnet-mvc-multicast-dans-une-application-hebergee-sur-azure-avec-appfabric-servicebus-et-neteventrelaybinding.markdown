@@ -2,7 +2,9 @@
 layout: post
 title: "[ASP.NET MVC] Multicast dans une application hébergée sur Azure avec AppFabric ServiceBus et NetEventRelayBinding"
 date: 2011-11-04 17:24:00 +01:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 59bacedc-f2c3-4c14-942c-4c897da258bf
 redirect_from:

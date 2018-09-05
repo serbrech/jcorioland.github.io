@@ -2,7 +2,9 @@
 layout: post
 title: "Using Application Insights in a Windows Store application"
 date: 2014-01-28 8:36:00 +01:00
-categories: Visual Studio, Windows 8
+categories:
+- DevOps
+- Windows 8
 author: "Julien Corioland"
 identifier: 4f91513d-676f-4454-9dd7-584e4304be3e
 redirect_from:

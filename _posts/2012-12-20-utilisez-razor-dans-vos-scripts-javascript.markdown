@@ -2,7 +2,9 @@
 layout: post
 title: "Utilisez Razor dans vos scripts JavaScript"
 date: 2012-12-20 9:37:36 +01:00
-categories: ASP.NET MVC, Javascript
+categories:
+- ASP.NET MVC
+- Web Development
 author: "Julien Corioland"
 identifier: fcb2de66-9428-4f5e-b53e-c0f9326dfbae
 redirect_from:

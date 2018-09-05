@@ -2,7 +2,9 @@
 layout: post
 title: "Develop a blog using ASPNET vNext, Azure Website, DocumentDB and Search services - Part 1"
 date: 2014-10-06 6:55:07 +02:00
-categories: ASP.NET MVC, ASP.NET, Microsoft Azure, ASP.NET vNext, DocumentDB, Search
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: b51c2e1b-3990-4bc7-9d25-3bf0ff5bda7a
 redirect_from:

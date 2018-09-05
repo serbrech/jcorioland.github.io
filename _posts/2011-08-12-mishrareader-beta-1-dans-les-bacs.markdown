@@ -2,7 +2,8 @@
 layout: post
 title: "MishraReader Beta 1 dans les bacs !"
 date: 2011-08-12 6:47:00 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: f5810607-46b0-4b50-9b41-61a03c1af7be
 redirect_from:

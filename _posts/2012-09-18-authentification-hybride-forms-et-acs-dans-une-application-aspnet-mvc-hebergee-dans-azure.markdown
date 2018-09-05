@@ -2,7 +2,9 @@
 layout: post
 title: "Authentification Hybride Forms et ACS dans une application ASP.NET MVC hébergée dans Azure"
 date: 2012-09-18 10:45:14 +02:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: 812cb1c0-69dc-49ad-a4c8-24b514a9e71e
 redirect_from:

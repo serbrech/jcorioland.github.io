@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] - Windows Phone 8 In App Purchase"
 date: 2012-10-31 1:38:48 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: b4499673-3f16-450f-a6ef-581f60db58bc
 redirect_from:

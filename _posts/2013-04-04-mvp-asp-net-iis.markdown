@@ -2,7 +2,8 @@
 layout: post
 title: "MVP ASP NET / IIS"
 date: 2013-04-04 9:57:15 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: 24528009-6171-40b3-afcf-0362c542cb75
 redirect_from:

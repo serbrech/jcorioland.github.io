@@ -2,7 +2,9 @@
 layout: post
 title:  "How to use the Azure Container Instance connector for Kubernetes with Azure Container Service (AKS)"
 date:   2017-11-27 10:00:00 +0100
-categories: Kubernetes, Azure, AKS, ACI
+categories:
+- Microsoft Azure
+- Kubernetes
 author: 'Julien Corioland'
 identifier: 'uleFu4ykDUSpAe+XDrSKoA=='
 ---

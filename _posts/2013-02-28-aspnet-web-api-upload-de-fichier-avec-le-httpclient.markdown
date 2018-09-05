@@ -2,7 +2,8 @@
 layout: post
 title: "[ASPNET Web API] Upload de fichier avec le HttpClient"
 date: 2013-02-28 11:45:14 +01:00
-categories: ASP.NET Web API
+categories:
+- ASP.NET Web API
 author: "Julien Corioland"
 identifier: c009f50e-db1a-474d-ac60-2d5b66026861
 redirect_from:

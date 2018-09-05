@@ -2,7 +2,8 @@
 layout: post
 title: "[EN] [ASP.NET MVC] Custom output cache provider"
 date: 2011-09-13 11:42:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 8867090b-cf98-4312-b2d5-ccebf74a3505
 redirect_from:

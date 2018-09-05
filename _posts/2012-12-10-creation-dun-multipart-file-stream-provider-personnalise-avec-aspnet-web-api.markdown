@@ -2,7 +2,8 @@
 layout: post
 title: "Création d’un multipart file stream provider personnalisé avec ASPNET Web API"
 date: 2012-12-10 17:05:59 +01:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 52c2d6ae-c1c8-4aeb-9dfe-04bf43bc8f17
 redirect_from:

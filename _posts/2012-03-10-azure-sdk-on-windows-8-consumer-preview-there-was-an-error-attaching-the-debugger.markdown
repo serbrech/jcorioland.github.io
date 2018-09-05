@@ -2,7 +2,9 @@
 layout: post
 title: "Azure SDK on Windows 8 Consumer preview : there was an error attaching the debugger…"
 date: 2012-03-10 19:42:00 +01:00
-categories: Windows Azure, Windows 8
+categories:
+- Microsoft Azure
+- Windows 8
 author: "Julien Corioland"
 identifier: 6bbae0a1-dfd5-40cc-8787-e400d7fcbed1
 redirect_from:

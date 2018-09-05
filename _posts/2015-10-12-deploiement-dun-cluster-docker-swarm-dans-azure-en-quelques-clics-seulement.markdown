@@ -2,7 +2,9 @@
 layout: post
 title: "Déploiement d’un cluster Docker Swarm dans Azure"
 date: 2015-10-12 15:39:26 +02:00
-categories: Microsoft Azure, Docker
+categories:
+- Microsoft Azure
+- Docker
 author: "Julien Corioland"
 identifier: 625f744a-3f4d-4e7b-9f81-d26488d32151
 redirect_from:

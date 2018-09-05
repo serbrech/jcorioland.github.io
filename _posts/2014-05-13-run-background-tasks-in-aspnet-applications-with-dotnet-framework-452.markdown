@@ -2,7 +2,9 @@
 layout: post
 title: "Run background tasks in aspnet applications with dotnet Framework 4.5.2"
 date: 2014-05-13 8:30:00 +02:00
-categories: ASP.NET MVC, ASP.NET Web API, ASP.NET
+categories:
+- ASP.NET MVC
+- ASP.NET Web API
 author: "Julien Corioland"
 identifier: 2350ebad-fe86-415c-9658-48f2a7108ef2
 redirect_from:

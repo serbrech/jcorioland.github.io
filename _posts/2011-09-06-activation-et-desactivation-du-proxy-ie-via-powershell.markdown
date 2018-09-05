@@ -2,7 +2,8 @@
 layout: post
 title: "Activation et désactivation du proxy IE via Powershell"
 date: 2011-09-06 7:28:00 +02:00
-categories: General
+categories:
+- General
 author: "Julien Corioland"
 identifier: 5ac95852-419c-4618-9755-a5a0c797c6c0
 redirect_from:

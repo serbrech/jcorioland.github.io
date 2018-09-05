@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Bonnes pratiques : création d’un Bootstrapper ou comment isoler l’initialisation d’une application"
 date: 2012-03-11 11:55:00 +01:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 47ed9e4b-410c-4491-b954-41f09b403805
 redirect_from:

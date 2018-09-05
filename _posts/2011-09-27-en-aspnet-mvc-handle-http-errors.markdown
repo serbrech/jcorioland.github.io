@@ -2,7 +2,8 @@
 layout: post
 title: "[EN] [ASP.NET MVC] Handle HTTP errors"
 date: 2011-09-27 11:57:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 94a09c5d-6d4b-40d4-a769-a7a73d674f8d
 redirect_from:

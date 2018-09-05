@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC 4] Mise en place de l’authentification OAuth Facebook"
 date: 2012-10-16 12:25:47 +02:00
-categories: 
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 1a17cfd0-2f0c-4ce8-b8b0-a2ee5baeb410
 redirect_from:

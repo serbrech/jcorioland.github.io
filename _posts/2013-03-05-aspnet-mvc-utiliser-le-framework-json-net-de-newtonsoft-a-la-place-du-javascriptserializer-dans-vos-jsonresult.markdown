@@ -2,7 +2,8 @@
 layout: post
 title: "[ASPNET MVC] Utiliser le framework Json .NET de Newtonsoft à la place du JavaScriptSerializer dans vos JsonResult"
 date: 2013-03-05 13:51:05 +01:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: d32fe820-3e98-4629-970b-e68ab7aa0340
 redirect_from:

@@ -2,7 +2,9 @@
 layout: post
 title: "[Azure] Invalidation de settings ou de cache à l’aide d’une clé de configuration"
 date: 2011-10-15 11:43:00 +02:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: e4010563-0e3a-481e-9fc5-9a3c6852c01a
 redirect_from:

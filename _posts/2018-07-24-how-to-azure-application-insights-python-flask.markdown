@@ -2,7 +2,9 @@
 layout: post
 title:  "How to monitor your Python Flask web application using Azure Application Insights"
 date:   2018-07-24 14:00:00 +0200
-categories: Azure, Monitoring, Application Insights, Python
+categories:
+- Microsoft Azure
+- DevOps
 author: 'Julien Corioland'
 identifier: 'a9d8aab9-65f1-42ef-afa5-bf3154c1378b'
 ---

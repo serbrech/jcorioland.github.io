@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC 4] Contrôleurs asynchrones !"
 date: 2011-09-29 10:42:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: cbb66151-b0d1-4a43-b374-0360fa562284
 redirect_from:

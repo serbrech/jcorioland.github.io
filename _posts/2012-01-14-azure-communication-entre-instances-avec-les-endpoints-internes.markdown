@@ -2,7 +2,9 @@
 layout: post
 title: "[Azure] Communication entre instances avec les endpoints internes"
 date: 2012-01-14 14:58:00 +01:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: db719690-423d-4332-b24e-4ee5d25685f1
 redirect_from:

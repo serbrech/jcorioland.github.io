@@ -2,7 +2,9 @@
 layout: post
 title: "Déployer automatiquement vos applications ASPNET MVC dans Azure avec Team Foundation Service"
 date: 2012-12-07 9:03:41 +01:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: e8fdd5e5-4b10-4fc6-bf90-4b1c6cd3ba1f
 redirect_from:

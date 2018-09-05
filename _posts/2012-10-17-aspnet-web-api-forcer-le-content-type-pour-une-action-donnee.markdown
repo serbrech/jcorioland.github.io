@@ -2,7 +2,8 @@
 layout: post
 title: "[ASPNET Web API] Forcer le content type pour une action donnée"
 date: 2012-10-17 10:42:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 23a19cd5-989e-46dc-9e7a-b1fd2fae8b64
 redirect_from:

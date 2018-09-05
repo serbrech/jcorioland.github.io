@@ -2,7 +2,8 @@
 layout: post
 title: "[Windows Phone 8] Utilisation du ProximityDevice NFC"
 date: 2012-11-02 2:04:36 +01:00
-categories: Windows Phone
+categories:
+- Windows Phone
 author: "Julien Corioland"
 identifier: 946dbafa-b128-4a1f-b886-4cf5391733ad
 redirect_from:

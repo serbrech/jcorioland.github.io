@@ -2,7 +2,9 @@
 layout: post
 title: "Using ASPNET Web API to stream Windows Azure blobs"
 date: 2013-09-06 14:35:00 +02:00
-categories: Windows Azure, ASP.NET Web API
+categories:
+- Microsoft Azure
+- ASP.NET Web API
 author: "Julien Corioland"
 identifier: d552d7e2-0a86-40af-a161-8a909fe9fa14
 redirect_from:

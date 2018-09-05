@@ -2,7 +2,8 @@
 layout: post
 title: "[EN] [Windows Phone] Best practices for periodic tasks with background agents"
 date: 2011-10-25 16:51:00 +02:00
-categories: Windows Phone
+categories:
+- Windows Phone
 author: "Julien Corioland"
 identifier: 03b5bae6-e64f-4886-84d8-6e017ffe49bf
 redirect_from:

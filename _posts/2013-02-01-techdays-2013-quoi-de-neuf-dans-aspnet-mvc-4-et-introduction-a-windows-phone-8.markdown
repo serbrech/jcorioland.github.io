@@ -2,7 +2,9 @@
 layout: post
 title: "[Techdays 2013] Quoi de neuf dans ASP.NET MVC 4 et Introduction à Windows Phone 8"
 date: 2013-02-01 16:19:12 +01:00
-categories: ASP.NET MVC, Windows Phone, Techdays
+categories:
+- ASP.NET MVC
+- Windows Phone
 author: "Julien Corioland"
 identifier: f6596589-2fc7-4e73-9677-838a1cf77057
 redirect_from:

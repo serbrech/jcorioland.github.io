@@ -2,7 +2,8 @@
 layout: post
 title: "[ASP.NET MVC] Attribut Remote et validation asynchrone"
 date: 2011-09-05 11:35:00 +02:00
-categories: ASP.NET MVC
+categories:
+- ASP.NET MVC
 author: "Julien Corioland"
 identifier: 11b2cdbc-c32d-4e9b-b88c-db80cd9175e7
 redirect_from:

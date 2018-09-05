@@ -2,7 +2,8 @@
 layout: post
 title: "Developping web applications with WinJS"
 date: 2014-04-05 8:53:25 +02:00
-categories: Javascript, HTML, CSS
+categories:
+- Web Development
 author: "Julien Corioland"
 identifier: 8107e857-0483-4611-9c92-7736002bce4d
 redirect_from:

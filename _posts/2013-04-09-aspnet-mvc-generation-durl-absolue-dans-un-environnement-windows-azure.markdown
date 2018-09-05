@@ -2,7 +2,9 @@
 layout: post
 title: "[ASPNET MVC] Génération d’URL absolue dans un environnement Windows Azure"
 date: 2013-04-09 9:36:00 +02:00
-categories: ASP.NET MVC, Windows Azure
+categories:
+- ASP.NET MVC
+- Microsoft Azure
 author: "Julien Corioland"
 identifier: aebe4fe6-04b4-499d-b3f4-c8b61180f145
 redirect_from:

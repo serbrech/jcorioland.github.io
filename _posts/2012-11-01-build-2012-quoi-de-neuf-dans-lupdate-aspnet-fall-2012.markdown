@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] Quoi de neuf dans l’update ASPNET Fall 2012"
 date: 2012-11-01 12:43:47 +01:00
-categories: ASP.NET MVC, Build 2012
+categories:
+- ASP.NET MVC
+- Build 2012
 author: "Julien Corioland"
 identifier: 25c61c61-b76c-4e7b-a96e-6f9cf69c7a5e
 redirect_from:

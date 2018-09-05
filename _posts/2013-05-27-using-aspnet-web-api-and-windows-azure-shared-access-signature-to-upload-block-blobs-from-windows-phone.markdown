@@ -2,7 +2,10 @@
 layout: post
 title: "Using ASPNET Web API and Windows Azure Shared Access Signature to upload block blobs from Windows Phone"
 date: 2013-05-27 23:42:00 +02:00
-categories: Windows Azure, Windows Phone, ASP.NET Web API
+categories:
+- Microsoft Azure
+- Windows Phone
+- ASP.NET Web API
 author: "Julien Corioland"
 identifier: 0fca6b8a-8793-4445-b09d-92096ebae577
 redirect_from:

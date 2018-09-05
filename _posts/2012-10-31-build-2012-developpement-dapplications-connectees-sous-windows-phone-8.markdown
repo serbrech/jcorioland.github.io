@@ -2,7 +2,9 @@
 layout: post
 title: "[Build 2012] Développement d’applications connectées sous Windows Phone 8"
 date: 2012-10-31 21:40:06 +01:00
-categories: Windows Phone, Build 2012
+categories:
+- Windows Phone
+- Build 2012
 author: "Julien Corioland"
 identifier: 5ba3539d-9074-4ef8-aada-3ccc66629c99
 redirect_from:
