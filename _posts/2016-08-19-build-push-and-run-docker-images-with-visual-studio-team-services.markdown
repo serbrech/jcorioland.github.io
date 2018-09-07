@@ -7,6 +7,9 @@ categories:
 - DevOps
 author: 'Julien Corioland'
 identifier: 'b1ae9576-eee3-46da-b43c-4038bd8be909'
+redirect_from:
+  - /2016/08/19/build-push-and-run-docker-images-with-visual-studio-team-services/
+  - /2016/08/19/build-push-and-run-docker-images-with-visual-studio-team-services
 ---
 
 Visual Studio Team Services (VSTS) is a great tool to handle your build and release pipelines, even for non Windows applications. In this post I will detail how you can use the Docker extension for VSTS to build, push and run Docker images on Linux.

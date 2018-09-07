@@ -6,6 +6,9 @@ categories:
 - DevOps
 author: 'Julien Corioland'
 identifier: '55075a22-3b6c-4051-8050-c93b2cff399b'
+redirect_from:
+  - /2016/01/12/vorlonjs-a-journey-to-devops-blog-post-series/
+  - /2016/01/12/vorlonjs-a-journey-to-devops-blog-post-series
 ---
 
 I have just started to publish a new blog post series that will detail how we implemented DevOps practices like Continuous Integration, Tests, Continuous Deployment and Release Management, Tests in Production on the Vorlon.JS project, using Visual Studio Team Services and Microsoft Azure.

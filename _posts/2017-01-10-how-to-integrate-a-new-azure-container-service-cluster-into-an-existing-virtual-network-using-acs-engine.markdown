@@ -7,6 +7,9 @@ categories:
 - Microsoft Azure
 author: 'Julien Corioland'
 identifier: 'd4b01e10-5b0b-49a3-95ab-e8b4975146ce'
+redirect_from:
+  - /2017/01/10/how-to-integrate-a-new-azure-container-service-cluster-into-an-existing-virtual-network-using-acs-engine/
+  - /2017/01/10/how-to-integrate-a-new-azure-container-service-cluster-into-an-existing-virtual-network-using-acs-engine
 ---
 
 When I discuss about Azure Container Service with customers, one of the most frequent question that they ask to me is "is it possible to deploy a cluster into an existing virtual network?".

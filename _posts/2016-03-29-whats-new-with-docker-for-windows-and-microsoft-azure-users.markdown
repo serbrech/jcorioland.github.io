@@ -7,6 +7,9 @@ categories:
 - Docker
 author: 'Julien Corioland'
 identifier: 'dcb3b8dc-1f59-413d-81c5-a6582fa2d5ba'
+redirect_from:
+  - /2016/03/29/whats-new-with-docker-for-windows-and-microsoft-azure-users/
+  - /2016/03/29/whats-new-with-docker-for-windows-and-microsoft-azure-users
 ---
 
 Maybe you have missed the last annoucements that have been made about Docker last week, but there are few things that may interest you if you’re running Windows or working with Microsoft Azure !

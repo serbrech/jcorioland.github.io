@@ -7,6 +7,9 @@ categories:
 - Docker
 author: 'Julien Corioland'
 identifier: 'f9438bb9-4ff2-49a6-8723-20aafef12b1a'
+redirect_from:
+  - /2016/04/28/getting-started-with-containers-and-docker-on-windows-server-2016-technical-preview-5/
+  - /2016/04/28/getting-started-with-containers-and-docker-on-windows-server-2016-technical-preview-5
 ---
 
 The Technical Preview 5 of Windows Server 2016 has been released yesterday, and it comes with a lot of new cool things for Windows containers and Docker !

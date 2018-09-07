@@ -8,6 +8,9 @@ categories:
 - Azure Container Service
 author: 'Julien Corioland'
 identifier: '91c5ebe3-0e45-4187-bb1a-105c48b838b4'
+redirect_from:
+  - /2016/07/21/azure-container-service-from-the-azure-cli/
+  - /2016/07/21/azure-container-service-from-the-azure-cli
 ---
 
 Azure CLI is a node.js cross-platform tool that runs on Linux, Mac OS and Windows and allows to work with Microsoft Azure from the command line. The latest version of Azure CLI includes some commands to create and manage [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/) clusters.

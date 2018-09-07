@@ -6,6 +6,9 @@ categories:
 - Docker
 author: 'Julien Corioland'
 identifier: '8d737cf3-0c27-442d-b0b2-ae443cc8af55'
+redirect_from:
+  - /2016/05/31/create-and-run-hyper-v-containers-using-docker-on-windows-10-desktop/
+  - /2016/05/31/create-and-run-hyper-v-containers-using-docker-on-windows-10-desktop
 ---
 
 As you probably know the Windows Insider program allows to get preview Windows 10 builds to test the new features that are coming in the next major update of Windows. Since a few weeks, a new feature named **Container** has been included in Windows 10 preview builds. This feature brings Hyper-V containers on the desktop, natively.

@@ -8,6 +8,9 @@ categories:
 - Microsoft Azure
 author: 'Julien Corioland'
 identifier: '58fee553-bb7d-488c-af04-058e1990675a'
+redirect_from:
+  - /2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services/
+  - /2016/11/29/full-ci-cd-pipeline-to-deploy-multi-containers-application-on-azure-container-service-docker-swarm-using-visual-studio-team-services
 ---
 
 [Azure Container Service](https://azure.microsoft.com/en-us/services/container-service/) (ACS) allows to deploy and manage containers using Docker Swarm, Mesosphere DC/OS or Kubernetes orchestrators. Recently, the ACS team open sources [ACS-engine](https://github.com/azure/acs-engine). It is now very easy to deploy these three orchestrators on Azure, using the portal, an Azure Resource Manager template or Azure-CLI.

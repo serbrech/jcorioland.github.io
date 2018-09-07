@@ -8,6 +8,9 @@ categories:
 - Docker
 author: 'Julien Corioland'
 identifier: '34bad63f-f562-4f18-b6c9-149b0523082f'
+redirect_from:
+  - /2016/04/25/create-a-docker-swarm-cluster-using-azure-container-service/
+  - /2016/04/25/create-a-docker-swarm-cluster-using-azure-container-service
 ---
 
 Microsoft has announced the general availability of Azure Container Service (ACS) that allows to deploy in an easy way a cluster of virtual machines that can host containers.

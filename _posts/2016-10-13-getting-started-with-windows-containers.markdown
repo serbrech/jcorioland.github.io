@@ -6,6 +6,9 @@ categories:
 - Docker
 author: 'Julien Corioland'
 identifier: '14d89bb4-01a4-41a7-b830-25c73d9899a7'
+redirect_from:
+  - /2016/10/13/getting-started-with-windows-containers/
+  - /2016/10/13/getting-started-with-windows-containers
 ---
 
 As you probably know, Microsoft announced the RTM of [Windows Server 2016 two weeks ago during Microsoft Ignite](https://blogs.technet.microsoft.com/hybridcloud/2016/09/26/announcing-the-launch-of-windows-server-2016/). Since yesterday, the bits are available and you can start to work with this new version of Windows Server, that brings containers to the Windows ecosystem (and many more features that you can discover [here](https://www.microsoft.com/en-us/cloud-platform/windows-server)).
