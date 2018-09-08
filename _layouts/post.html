@@ -8,7 +8,7 @@ layout: default
   {% assign orderedCategories = page.categories | sort: '' %}
   {% for category in orderedCategories %} 
     <span class="post-category">
-      {{ category }}
+      <a href="{{site.baseurl}}/categories/#{{category| replace: ' ', '-'}}">{{category}}</a>
       {% if forloop.last == false %}
       | 
       {% endif %}

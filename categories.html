@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: /categories/
+title: Archives by categories
+---
+<h2>Archives by categories</h2>
+<ul id="archive-categories">
+  {% assign orderedCategories = site.categories | sort: '' %}
+  {% for category in orderedCategories %}
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <li>
+      <a href="#{{ category_name | replace: ' ', '-' }}">{{category_name}}</a>
+    </li>
+  {% endfor %}
+</ul>
+<hr />
+<div id="archives">
+{% assign orderedCategories = site.categories | sort: '' %}
+{% for category in orderedCategories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | replace: ' ', '-' }}">
+      <a name="{{ category_name | replace: ' ', '-' }}"></a>
+    </div>
+    <p></p>
+    
+    <h3 class="category-head">{{ category_name }}</h3>
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <p><span>{{ post.date | date_to_string }} - </span><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></p>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>

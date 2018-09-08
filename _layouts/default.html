@@ -36,21 +36,9 @@
     </section>
 
     <section class="main-content">
+      <span><a href="{{site.baseurl}}/" alt="Home">Home</a> - <a href="{{site.baseurl}}/about/" alt="About me">About me</a> - <a href="{{site.baseurl}}/categories/" alt="Browse by categories">Browse by categories</a></span>
+      <hr />
       {{ content }}
-      <!-- <h2>Categories</h2>
-      <ul>
-      {% assign orderedCategories = site.categories | sort: '' %}
-      {% for category in orderedCategories %}
-          <li>{{ category[0] }} ({{ category[1].size }})</li>
-      {% endfor %}
-      </ul>
-      <h2>Archives</h2>
-      {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
-      <ul>
-      {% for year in postsByYear %}
-        <li>{{ year.name }} ({{year.size}})</li>
-      {% endfor %}
-      </ul> -->
       <footer class="site-footer">
         <span class="site-footer-credits">&copy; Julien Corioland, Software Engineer @ Microsoft - Hosted on <a href="https://pages.github.com">GitHub Pages</a>.</span>
       </footer>
