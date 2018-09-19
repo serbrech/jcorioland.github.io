@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to: Azure Kubernetes Service + Custom VNET with Kubenet"
-date:   2018-09-18 15:15:00 +0200
+date:   2018-09-19 19:15:00 +0200
 categories: 
 - Microsoft Azure
 - Kubernetes
