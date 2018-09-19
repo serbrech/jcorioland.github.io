@@ -15,13 +15,15 @@ If you read the [network documentation of AKS](https://docs.microsoft.com/en-us/
 
 In this post, I will explain how to use Advanced networking, to keep control on the virtual network, but continue to use Kubenet as a network plugin.
 
-> *Thank you very much to my colleague [Stéphane Erbrech](https://twitter.com/serbrech) who helped to get this scenario working*
+> *Thank you very much to my colleague [Stéphane Erbrech](https://twitter.com/serbrech) who has helped a lot to get this scenario working and review this post before publication*
 
 <!--more-->
 
-A lot of the customers I am working with need to control the virtual network in which the Azure Kubernetes Service cluster should be deployed, most of the time for being able to peer this virtual network with their existing infrastructure and enable on premise communications. Azure CNI makes sure that all your pods running in the Kubernetes cluster get an IP address on the subnet, which is great because you can benefit from all the VNET/Subnet features and security rules using NSGs. But sometime it can be complicated to have one IP address per pode, for example when you have to deal with very small CIDR on the subnet where AKS will land. In this case, it is really interesting to keep Kubenet (that comes with a private network inside the cluster).
+A lot of the customers I am working with need to control the virtual network in which the Azure Kubernetes Service cluster should be deployed, most of the time for being able to peer this virtual network with their existing infrastructure and enable on premise communications. Azure CNI makes sure that all your pods running in the Kubernetes cluster get an IP address on the subnet, which is great because you can benefit from all the VNET/Subnet features and security rules using NSGs. But sometime it can be complicated to have one IP address per pod, for example when you have to deal with very small IP addresses range on the subnet where AKS will land. In this case, it is really interesting to keep Kubenet (that comes with a private network inside the cluster).
 
-This scenario is not supported using Azure CLI or Azure Portal but we have published all the scripts to get ready on [this GitHub repository](https://github.com/serbrech/AKS-vnet-kubenet).
+This scenario is not supported using Azure CLI or Azure Portal but we have published all the scripts to get ready on [this GitHub repository](https://github.com/serbrech/AKS-vnet-kubenet). Let's have a look at how this sample works!
+
+### Environment variables
 
 After cloning the repository, you need to update the `scripts/env.sh` file. It contains all the environment variables that will be used by the deployment scripts.
 
@@ -73,7 +75,7 @@ export AKS_SUBNET2_RANGE=10.201.4.0/22
 
 > If the virtual network already exists, you probably won't need the `AKS_SUBNET1_*`, just remove them.
 
-AKS cluster will be deployed inside the subnet referenced by the `AKS_SUBNET` variable. We also let you the option to choose the Docker bridge address, the Kubernetes DNS service IP address and the Kubernetes service address range, as documented [here](https://docs.microsoft.com/en-us/azure/aks/networking-overview#plan-ip-addressing-for-your-cluster).
+AKS cluster will be deployed inside the subnet referenced by the `AKS_SUBNET` variable. We also let you the option to choose the Docker bridge address, the Kubernetes DNS service IP address and the Kubernetes service address range, as documented [here](https://docs.microsoft.com/en-us/azure/aks/networking-overview#plan-ip-addressing-for-your-cluster). But, most of the time, you don't need to update this configuration.
 
 ```bash
 ####
@@ -85,6 +87,8 @@ export AKS_SUBNET=/subscriptions/${AKS_SUB}/resourceGroups/${AKS_VNET_RG}/provid
 export AKS_DNS_IP=10.0.0.10 # Must be within SVC_CIDR
 export AKS_SVC_CIDR=10.0.0.0/16 # Must not overlap with AKS_VNET_RANGE
 ```
+
+### Deployment script
 
 Now that your environment variables are configured, you can jump to the `scripts/deploy-aks-custom-vnet.sh` script that is responsible for deploying the AKS cluster.
 
@@ -166,7 +170,9 @@ Once you have updated the script following your needs, you are ready to deploy:
 
 Wait for the deployment to be completed.
 
-> There is currently an issue while deploying AKS with Advanced Networking and Kubenet plugin: the route table and NSG created in the `MC_*` resource group are not associated to the subnet where the cluster is deployed. To make sure the network will work while the cluster is deployed, the script will do this association for you, right after the deployment:
+### Network fix
+
+There is currently an issue while deploying AKS with Advanced Networking and Kubenet plugin: the route table and NSG created in the `MC_*` resource group are not associated to the subnet where the cluster is deployed. To make sure the network will work while the cluster is deployed, the script will do this association for you, right after the deployment:
 
 ```bash
 # We need to update the VNET with the Route Table and NSG from AKS
